@@ -1,0 +1,63 @@
+@forward "colors";
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg1);
+  color: var(--white);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  font-family: var(--MonFamily);
+  background-color: var(--btncolor2);
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--btncolor);
+  width: fit-content;
+  padding: 12px 24px;
+  cursor: pointer;
+  color: var(--btncolor);
+  font-size: var(--fs10);
+}
+
+.section {
+  margin: var(--fs50) 0 0 0;
+  width: 100%;
+}
+.sub {
+  max-width: var(--width1);
+  padding: 0 var(--fs25);
+  margin: 0 auto;
+}
+.widget {
+  margin: 1.5rem 0;
+}
+
+.card_animate {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.card_animate:hover {
+  transform: translateY(-5px);
+}
