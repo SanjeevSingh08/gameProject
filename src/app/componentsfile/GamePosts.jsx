@@ -115,8 +115,8 @@ const GamePosts = () => {
           </div>
         </div>
       </section>
-      <section className="screen3_section section ">
-        <div className="screen_section_sub">
+      <section className="screen3_section  ">
+        <div className="screen_section_sub last-screen">
           <div className="background_image3"></div>
           <div className="screen_content3">
             <h2 className="game_sub_title">

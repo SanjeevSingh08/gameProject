@@ -1,29 +1,26 @@
 @use "../globals" as *;
 
-@media screen and  (max-width: 1110px) {
-
-    :root{
-        --width1:62rem;
-       
-
-    }
-  h1{
-    font-size: var(--fs26)!important;
+@media screen and (max-width: 1110px) {
+  :root {
+    --width1: 62rem;
   }
-  h2{
-    font-size: var(--fs20)!important;
+  h1 {
+    font-size: var(--fs26) !important;
   }
-  h3{
-    font-size: var(--fs18)!important;
+  h2 {
+    font-size: var(--fs20) !important;
+  }
+  h3 {
+    font-size: var(--fs18) !important;
   }
   h4 {
     font-size: var(--fs13) !important;
-  
+
     font-weight: 700 !important;
   }
   h5 {
     font-size: var(--fs11) !important;
-  
+
     font-weight: 400 !important;
   }
   p {
@@ -32,169 +29,253 @@
   }
   .card_body .blogbtn {
     width: 80%;
-}
-.game_card {
-   
+  }
+  .game_card {
     flex-direction: column;
-  
+
     align-items: flex-start;
+  }
+}
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: var(--fs24) !important;
+  }
+  h2 {
+    font-size: var(--fs18) !important;
+  }
+  h3 {
+    font-size: var(--fs16) !important;
+  }
+  h4 {
+    font-size: var(--fs12) !important;
+
+    font-weight: 700 !important;
+  }
+  h5 {
+    font-size: var(--fs11) !important;
+
+    font-weight: 400 !important;
+  }
+  p {
+    font-size: var(--fs10);
+    font-weight: 300;
+  }
+  .row_division .card {
+    flex: 1 1 50%;
+  }
+  .price_card {
+    width: 46%;
+  }
+  .pricing_charts {
+    gap: 2rem;
+
+    justify-content: center;
+  }
+  .test_card {
+    flex: 1 1 50%;
+  }
+  .game_posts .game_wrapper {
+    flex: 1 1 50%;
+  }
+  .game_card_sub {
+    width: 100%;
+  }
+  .about_partition {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_content {
+    width: 100%;
+  }
+  .hero_main {
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .poster_section_sub {
+    height: 60vw;
+  }
 }
 
-}
-@media screen and  (max-width: 960px) {
+@media screen and (max-width: 600px) {
+  :root {
+    --fs25: 1rem;
+    --fs50:3rem;
+  }
+  .hero_main {
+    width: 100%;
+  }
+  h1 {
+    font-size: var(--fs16) !important;
+  }
+  h2 {
+    font-size: var(--fs12) !important;
+  }
+  h3 {
+    font-size: var(--fs11) !important;
+  }
+  h4 {
+    font-size: var(--fs10) !important;
 
+    font-weight: 700 !important;
+  }
+  h5 {
+    font-size: var(--fs09) !important;
 
-    h1{
-        font-size: var(--fs24)!important;
-      }
-      h2{
-        font-size: var(--fs18)!important;
-      }
-      h3{
-        font-size: var(--fs16)!important;
-      }
-      h4 {
-        font-size: var(--fs12) !important;
-      
-        font-weight: 700 !important;
-      }
-      h5 {
-        font-size: var(--fs11) !important;
-      
-        font-weight: 400 !important;
-      }
-      p {
-        font-size: var(--fs10);
-        font-weight: 300;
-      }
-    .row_division .card {
-   
-        flex: 1 1 50%;
-       
-    } 
-    .price_card {
-        
-        width: 46%;
-    }
-    .pricing_charts {
-        gap: 2rem;
-        
-        justify-content: center;
-    }
-    .test_card {
-      
-        flex: 1 1 50%;
-    }
-    .game_posts .game_wrapper {
-        flex: 1 1 50%;
-       
-    }
-    .game_card_sub {
-        width: 100%;
-    }    
-    .about_partition {
-   
-        flex-direction: column;
-        align-items: center;
-    }
-    .about_content {
-        width: 100%;
-       
-    }
-    .hero_main{
-        margin: auto;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .poster_section_sub{
-      height: 60vw;
-    }
-   
-   
-}
-
-@media screen and  (max-width: 600px) {
-    :root{
-      --fs25:1rem;
-       
-
-    }
-    .hero_main{
-        width: 100%;
-    }
-    h1{
-        font-size: var(--fs16)!important;
-      }
-      h2{
-        font-size: var(--fs12)!important;
-      }
-      h3{
-        font-size: var(--fs11)!important;
-      }
-      h4 {
-        font-size: var(--fs10) !important;
-      
-        font-weight: 700 !important;
-      }
-      h5 {
-        font-size: var(--fs09) !important;
-      
-        font-weight: 400 !important;
-      }
-      p {
-        font-size: var(--fs08)!important;
-        font-weight: 300;
-      }
-      .row_division .card {
-   
-        flex: 1 1 60%;
-       
-    } 
-    .test_card {
-      
-      flex: 1 1 60%;
+    font-weight: 400 !important;
+  }
+  p {
+    font-size: var(--fs08) !important;
+    font-weight: 300;
+  }
+  .row_division .card {
+    flex: 1 1 60%;
+  }
+  .test_card {
+    flex: 1 1 60%;
   }
   .game_posts .game_wrapper {
     flex: 1 1 60%;
-   
+  }
+  .price_card {
+    flex: 1 1 50%;
+  }
+  .hero_btn {
+    font-size: 9px;
+  }
+  .poster_content {
+    width: 80%;
+    padding: 1rem;
+    div {
+      padding: 8px 10px;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+  }
+  .btn2 {
+    padding: 8px 20px;
+  }
+  .game_card .p_card {
+    padding: 0.5rem;
+  }
+  .badge {
+    padding: 6px 13px;
+    font-size: 0.8rem;
+  }
+  .s_card_sub {
+    padding: 1rem;
+  }
+  .iconsbox {
+    width: 52px;
+    height: 52px;
+    padding: 16px;
+  }
+  .widget-content {
+    margin: 1rem 0;
+  }
+
+  .search_main {
+    height: 2.8rem;
+  }
+  .search_main svg {
+    margin-left: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .search_main .search_bar {
+    padding: 8px 10px 8px 40px;
+  }
+  .search_main {
+    .search_bar {
+    }
+    .search_bar::placeholder {
+      visibility: hidden;
+    }
+  }
+  .search_main .search_btn {
+    font-size: 0.7rem;
+    padding: 4px 15px;
+  }
+  .widget-text .title {
+    margin: 0.8rem 0;
+  }
+  .widget {
+    margin: 1rem 0;
+  }
+  .screen_content div,
+  .screen_content2 div,
+  .screen_content3 div {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .pricing_charts {
+    gap: 1rem;
+  }
+  .price_card_sub {
+    gap: 1rem;
+    .price_btn{
+      padding: .8rem 1rem;
+    }
+  }
+  .price_card{
+padding:2rem ;
+  }
+
+  .numbers{
+    flex-wrap: wrap;
+    .num{
+      flex: 1 1 50%;
+      margin-bottom: 1rem;
+      h2{
+        text-align: center;
+      }
+    }
+
+  }
+  .advertize{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    div{
+      margin-bottom: 1rem;
+    }
+  }
+  .card_body .blog_title {
+    padding-bottom: 25px;
+ 
+  }
+  .card_body .blogbtn {
+    width: fit-content;
+font-size: .8rem;
+ 
 }
-.price_card{
-flex: 1 1 50%;
+.thumbnail {
+  
+  height: 270px;
+
 }
-.hero_btn{
-  font-size: 9px;
+.background_image3{
+  background-position: center;
+    background-size: contain;
+    /* background: no-repeat; */
+    background-repeat: no-repeat;
 }
-.poster_content{
-  width: 80%;
-  padding: 1rem;
-  div{
-    padding: 8px 10px;
-    font-size: .8rem;
-    margin-top: 0.5rem;
+.last-screen{
+  height: 250px!important;
+}
+.hero_section{
+  padding: 6rem 0 0 0;
+}
+.nav_section {
+
+  padding: 10px 30px;
+  img{
+    width: 55px;
+    height: 40px;
   }
 }
-.btn2{
-  padding: 8px 20px;
-}
-.game_card .p_card {
-
-  padding: 0.5rem;
-}
-.badge {
- 
-  padding: 6px 13px;
-  font-size: 0.8rem;
- 
-}
-.s_card_sub {padding: 1rem;}
-.iconsbox{
-  width: 57px;
-  height: 57px;
-  padding: 15px;
-
-}.widget-content{
-  margin:1rem 0
-}
-}
+.nav_section .nav_link {
+  display: none;
+}}

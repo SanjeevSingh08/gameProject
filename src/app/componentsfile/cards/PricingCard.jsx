@@ -22,7 +22,7 @@ const PricingCard = ({ features, title, price }) => {
                 <div className="bluecircle">
                   <FontAwesomeIcon icon={faCheck} />
                 </div>
-                {item}
+                <p>{item}</p>
               </li>
             );
           })}
