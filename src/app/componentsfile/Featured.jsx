@@ -12,7 +12,7 @@ const Featured = () => {
             </div>
           </div>
 
-          <section className="poster_section ">
+          <section className="poster_section section ">
             <h3 >Featured Game</h3>
             <div className="poster_section_sub">
               <div className="poster_background"></div>

@@ -35,6 +35,13 @@
 
     align-items: flex-start;
   }
+  .container_sub{
+    flex-direction: column;
+  }
+  .address{
+    width: 100%;
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 960px) {
   h1 {
@@ -97,12 +104,31 @@
   .poster_section_sub {
     height: 60vw;
   }
+  .first_container footer{
+  
+    flex: 1 1 50%;
+}
+.second_container{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  p{
+    margin-left: -1rem;
+  }
+
+}
+
+
+
+
+
 }
 
 @media screen and (max-width: 600px) {
   :root {
     --fs25: 1rem;
-    --fs50:3rem;
+    --fs50: 3rem;
   }
   .hero_main {
     width: 100%;
@@ -188,8 +214,6 @@
     padding: 8px 10px 8px 40px;
   }
   .search_main {
-    .search_bar {
-    }
     .search_bar::placeholder {
       visibility: hidden;
     }
@@ -215,67 +239,67 @@
   }
   .price_card_sub {
     gap: 1rem;
-    .price_btn{
-      padding: .8rem 1rem;
+    .price_btn {
+      padding: 0.8rem 1rem;
     }
   }
-  .price_card{
-padding:2rem ;
+  .price_card {
+    padding: 2rem;
   }
 
-  .numbers{
+  .numbers {
     flex-wrap: wrap;
-    .num{
+    .num {
       flex: 1 1 50%;
       margin-bottom: 1rem;
-      h2{
+      h2 {
         text-align: center;
       }
     }
-
   }
-  .advertize{
+  .advertize {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1rem;
-    div{
+    div {
       margin-bottom: 1rem;
     }
   }
   .card_body .blog_title {
     padding-bottom: 25px;
- 
   }
   .card_body .blogbtn {
     width: fit-content;
-font-size: .8rem;
- 
-}
-.thumbnail {
-  
-  height: 270px;
-
-}
-.background_image3{
-  background-position: center;
+    font-size: 0.8rem;
+  }
+  .advertize .img_sub {
+    position: relative;
+    width: 92px;
+    height: 23px;
+  }
+  .thumbnail {
+    height: 270px;
+  }
+  .background_image3 {
+    background-position: center;
     background-size: contain;
     /* background: no-repeat; */
     background-repeat: no-repeat;
-}
-.last-screen{
-  height: 250px!important;
-}
-.hero_section{
-  padding: 6rem 0 0 0;
-}
-.nav_section {
-
-  padding: 10px 30px;
-  img{
-    width: 55px;
-    height: 40px;
+  }
+  .last-screen {
+    height: 250px !important;
+  }
+  .hero_section {
+    padding: 6rem 0 0 0;
+  }
+  .nav_section {
+    padding: 10px 30px;
+    img {
+      width: 50px;
+      height: 35px;
+    }
+  }
+  .nav_section .nav_link {
+    display: none;
   }
 }
-.nav_section .nav_link {
-  display: none;
-}}

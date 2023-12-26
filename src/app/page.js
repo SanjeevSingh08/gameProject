@@ -12,11 +12,12 @@ import Features from './componentsfile/Features'
 import Featured from './componentsfile/Featured'
 
 import GamePosts from './componentsfile/GamePosts'
+import Footer from './componentsfile/Footer'
 export default function Home() {
   return (
     <>
     
-   <Navbar/>
+ 
    <Hero/>
    <SearchBar/>
 <Services/>
@@ -27,6 +28,7 @@ export default function Home() {
 
 <Featured/>
 <GamePosts/>
+
 
 
    </>
