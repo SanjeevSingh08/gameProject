@@ -47,6 +47,40 @@
 }
 
 @media screen and (max-width: 1090px) {
+
+  h1 {
+    font-size: var(--fs22) !important;
+    font-weight: 700 !important;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: var(--fs17) !important;
+    font-weight: 700 !important;
+  }
+  h3 {
+    font-size: var(--fs16) !important;
+
+    font-weight: 700 !important;
+  }
+  h4 {
+    font-size: var(--fs11) !important;
+
+    font-weight: 700 !important;
+  }
+  h5 {
+    font-size: var(--fs10) !important;
+
+    font-weight: 400 !important;
+  }
+  p {
+    font-size: var(--fs10);
+    font-weight: 300;
+  }
+  li {
+    font-size: var(--fs10);
+    line-height: 1.3;
+  }
   .hero_card {
     flex-direction: column;
     max-width: 740px;
@@ -127,32 +161,39 @@
   .test_sub .test_first .test_head {
     width: 100%;
   }
-  .bonus_btn{
+  .bonus_btn {
     width: fit-content;
   }
   .intro_sub .i1 ul li {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-}
-.intro_sub .i1 {
-  
+  }
+  .intro_sub .i1 {
     padding: 1rem 1rem;
-}
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .intro_sub .i1 ul li {
-        margin-bottom: 1rem;
-        font-size: 1rem;
+@media screen and (max-width: 900px) {
+  .nav_section{
+
+    img{
+      width: 4rem;
+      height: 4rem;
+      margin-left: 2vw;
     }
+  }
+  .intro_sub .i1 ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
   .sub {
     padding: var(--fs15);
   }
-  .brands_sub{
+  .brands_sub {
     gap: 1rem;
-    img{
-        width: 70px;
-        height: 35px;
+    img {
+      width: 70px;
+      height: 35px;
     }
   }
   .hero_title {
@@ -205,32 +246,147 @@
     line-height: 1.3;
   }
   .method_sub .method_cards .m_img {
- 
     width: 3rem;
     height: 3rem;
     border-radius: 1rem;
-   
-}
+  }
   .method_sub .method_cards .m_card p {
-    font-size: .9rem;
-}
-.section{
-    margin: 3rem 0 0 0 ;
-}
+    font-size: 0.9rem;
+  }
+  .section {
+    margin: 3rem 0 0 0;
+  }
+  #ebook {
+    img {
+      object-position: 1rem;
+    }
+  }
+  .t_card {
+    padding: 1.5rem 1.5rem;
+    margin-right: 1.5rem;
+    width: 250px;
+
+    gap: 1rem;
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .test_head {
+    text-align: center;
+  }
+
+ 
 }
 
+// @media screen and (max-width: 600px) {
+//     .intro_sub .i1 ul li {
+//         margin-bottom: 1rem;
+//         font-size: 1rem;
+//     }
+//   .sub {
+//     padding: var(--fs15);
+//   }
+//   .brands_sub{
+//     gap: 1rem;
+//     img{
+//         width: 70px;
+//         height: 35px;
+//     }
+//   }
+//   .hero_title {
+//     font-size: 1rem;
+//   }
+//   .card_title {
+//     font-size: 1rem;
+//   }
+//   .slot .time_slot {
+//     font-size: 1rem;
+//   }
+//   .btn {
+//     font-size: 1.1rem;
+//     padding: 1rem 1.5rem;
+//   }
+//   .card_btn span {
+//     font-size: 0.8rem;
+//   }
+//   h1 {
+//     font-size: var(--fs20) !important;
+//     font-weight: 700 !important;
+//     line-height: 1.3;
+//   }
+
+//   h2 {
+//     font-size: var(--fs18) !important;
+//     font-weight: 700 !important;
+//   }
+//   h3 {
+//     font-size: var(--fs18) !important;
+
+//     font-weight: 700 !important;
+//   }
+//   h4 {
+//     font-size: var(--fs11) !important;
+
+//     font-weight: 700 !important;
+//   }
+//   h5 {
+//     font-size: var(--fs10) !important;
+
+//     font-weight: 400 !important;
+//   }
+//   p {
+//     font-size: var(--fs10);
+//     font-weight: 300;
+//   }
+//   li {
+//     font-size: var(--fs10);
+//     line-height: 1.3;
+//   }
+//   .method_sub .method_cards .m_img {
+
+//     width: 3rem;
+//     height: 3rem;
+//     border-radius: 1rem;
+
+// }
+//   .method_sub .method_cards .m_card p {
+//     font-size: .9rem;
+// }
+// .section{
+//     margin: 3rem 0 0 0 ;
+// }
+// #ebook{
+//   img{
+//   object-position:1rem;
+
+// }
+// }
+// .t_card {
+//   padding: 1.5rem 1.5rem;
+//   margin-right: 1.5rem;
+//   width: 250px;
+
+//   gap: 1rem;
+//  p{
+//   font-size: .8rem;
+
+//  }
+// }
+// .test_head{
+//   text-align: center;
+// }
+// }
+
 @media screen and (max-width: 450px) {
-    .browse_cards {
-      
-        gap: 2rem;
-    }
-    .method_sub .method_cards .m_card {
-     
-        padding: 1.5rem;
-    }
-    .method_sub .method_cards .m_card p {
-        font-size: .8rem;
-    }
+  .browse_cards {
+    gap: 2rem;
+  }
+  .method_sub .method_cards .m_card {
+    padding: 1.5rem;
+  }
+  .method_sub .method_cards .m_card p {
+    font-size: 0.8rem;
+  }
   .sub {
     padding: var(--fs10);
   }
@@ -296,28 +452,36 @@
     span {
       font-size: 0.9rem;
     }
-    p{
-        font-size: 1rem;
+    p {
+      font-size: 1rem;
     }
   }
-  .widget{
+  .widget {
     margin: 1rem 0;
   }
-  .hero_card{
-    margin:2rem 0 0 0 ;
+  .hero_card {
+    margin: 2rem 0 0 0;
   }
   .feature_sub .feature_img {
- width: 80%;
-}
+    width: 80%;
+  }
 
-.feature_sub .f1 {
-  
+  .feature_sub .f1 {
     padding: 1rem 1rem;
-}
-.section{
-    margin: 2rem 0 0 0 ;
-}
-.bonus_sub{
+  }
+  .section {
+    margin: 2rem 0 0 0;
+  }
+  .bonus_sub {
     gap: 2rem;
-}
+  }
+  .intro_sub .i1 ul li {
+    font-size: 0.8rem;
+  }
+  .footer_last span {
+    font-size: .9rem;
+  }
+  .footer{
+    padding-bottom: 3rem;
+  }
 }
