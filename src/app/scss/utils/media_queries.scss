@@ -171,6 +171,11 @@
   .intro_sub .i1 {
     padding: 1rem 1rem;
   }
+  .yt-overlay {
+    height: 60vh;
+
+    margin: 1rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -213,6 +218,10 @@
   }
   .card_btn span {
     font-size: 0.8rem;
+  }
+  .yt-overlay {
+    height: 260px;
+    margin: 1rem;
   }
   h1 {
     font-size: var(--fs20) !important;
