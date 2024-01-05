@@ -9,6 +9,7 @@ import pe2 from "../../../public/pe2.png"
 import pe3 from "../../../public/pe3.png"
 import { oo } from "../Provider/ContextProvider";
 import Overlay from "../overlay/Overlay";
+import Timer from "../component/Timer"
 const Testimonial =  () => {
 
   const { overlay, setOverlay } = useContext(oo);
@@ -116,7 +117,7 @@ const Testimonial =  () => {
                         </div>
                         <div className="t_last">
                           {/* <Image src={p1} alt="person" width={48} height={48} /> */}
-                          <h4>{item.name}</h4>
+                          <h5>{item.name}</h5>
                           <p className="t_des gray">{item.designation}</p>
                         </div>
                         <div className="t_content">
@@ -153,7 +154,7 @@ const Testimonial =  () => {
                 </span>
               </div>
               <div className="footer_last">
-                <p>Offer ends in: 6:51</p>
+              <Timer initialCountdownTime={10 * 60}/>
                 <span>
                   🔥 54 people Registered in the last 24 hours! Don&rsquo;t miss
                   out.

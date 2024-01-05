@@ -14,6 +14,7 @@ import a1 from '../../../public/a1.png';
 import a2 from '../../../public/a2.png';
 import a3 from '../../../public/a3.png';
 import siddhi from '../../../public/siddhi.jpeg';
+import Timer from './Timer';
 
 import voda from '../../../public/voda.png';
 import toi from '../../../public/toi.png';
@@ -139,7 +140,7 @@ const Navbar = () => {
                     🔥 54 people Registered in the last 24 hours! Don&rsquo;t miss
                     out.
                   </span>
-                  <p>Offer ends in: 6:51</p>
+                  <Timer initialCountdownTime={10 * 60}/>
                 </div>
               </div>
             </div>

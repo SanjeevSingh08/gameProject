@@ -220,7 +220,7 @@
     font-size: 0.8rem;
   }
   .yt-overlay {
-    height: 260px;
+    height: 360px;
     margin: 1rem;
   }
   h1 {
@@ -499,7 +499,8 @@
      height: 230px;
 }
 .tes_img{
-  object-position: center;
+  
+  object-fit: fill;
   
 }
 }

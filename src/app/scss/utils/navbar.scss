@@ -465,7 +465,7 @@ padding: 0 4vw;
 }
 .tes_img{
   object-position: center;
-  object-fit: cover;
+  object-fit: fill;
 }
 .t_card {
   // padding: 3rem 2rem;
@@ -538,6 +538,7 @@ height: max-content;
   width: 100%;
   align-items: center;
   background:var(--pinkbg);
+  padding: .5rem 0;
 }
 
 
