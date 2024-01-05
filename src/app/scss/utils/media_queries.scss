@@ -180,8 +180,10 @@
       width: 4rem;
       height: 4rem;
       margin-left: 2vw;
+      margin: 1.5vw 0;
     }
   }
+  
   .intro_sub .i1 ul li {
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -262,11 +264,11 @@
     }
   }
   .t_card {
-    padding: 1.5rem 1.5rem;
+    
     margin-right: 1.5rem;
     width: 250px;
 
-    gap: 1rem;
+   
     p {
       font-size: 0.8rem;
     }
@@ -484,4 +486,11 @@
   .footer{
     padding-bottom: 3rem;
   }
+.t_vid{
+     height: 230px;
+}
+.tes_img{
+  object-position: center;
+  
+}
 }

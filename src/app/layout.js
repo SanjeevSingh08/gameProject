@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./scss/style.scss";
+import { ContextOverlay } from "./Provider/ContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +24,9 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-
+<ContextOverlay>
       <body className={inter.className}>{children}</body>
+      </ContextOverlay>
     </html>
   );
 }

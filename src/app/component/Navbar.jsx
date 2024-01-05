@@ -90,7 +90,8 @@ const Navbar = () => {
                   </li>
                   <li>
                     <span>✅</span>
-                    <div>Problem-solving with &rsquo;Model &rsquo;based approaches</div>
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                    <div>Problem-solving with 'Model' based approaches</div>
                   </li>
                   <li>
                     <span>✅</span>
@@ -151,7 +152,7 @@ const Navbar = () => {
           <div className='feature_sub'>
             <div className='f1'>
               <h2>
-                What difference can this learning path mean to your carrier?
+                What difference can this learning path mean to your career?
               </h2>
               <p className='card_title'>
                 Learn how well you are poised for career success and what else
@@ -234,7 +235,8 @@ const Navbar = () => {
       <section className='method_section section'>
         <div className='sub'>
           <div className='method_sub'>
-            <h2>Dive into AAA method and start your journey</h2>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            <h2>Dive into 'The' AAA method and start your journey</h2>
             <div className='method_cards'>
               <div className='m_card'>
                 <div className='m_img'>
