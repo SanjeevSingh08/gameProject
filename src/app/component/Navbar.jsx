@@ -120,7 +120,7 @@ const Navbar = () => {
               <div className='flex'>
                 <h3>Be a Jedi At Your WORK</h3>
                 <p className='card_title'>
-                  Watch this one minute video so you understand why you should
+                  Watch this one minute short video so you understand why you should
                   join our webinar!
                 </p>
               </div>
