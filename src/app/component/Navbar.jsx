@@ -33,7 +33,7 @@ import brain from '../../../public/brain.png';
 
 const Navbar = () => {
 
-  const ownerPhoneNumber = '+919331581446'; // Replace with the owner's phone number
+  const ownerPhoneNumber = '+918100049519'; // Replace with the owner's phone number
 const prefilledMessage = 'Hi! I am interested in joining';
 
 const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(prefilledMessage)}`;
