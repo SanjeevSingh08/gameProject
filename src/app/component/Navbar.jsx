@@ -33,12 +33,11 @@ import brain from '../../../public/brain.png';
 
 const Navbar = () => {
 
-  const ownerPhoneNumber = '+919331581446'; // Replace with the owner's phone number
-const prefilledMessage = 'Hi! I am interested in joining';
+  const ownerPhoneNumber = '+918100049519'; // Replace with the owner's phone number
+const prefilledMessage = 'Hi! I am interested.';
 
 const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(prefilledMessage)}`;
 
-  
   
   return (
     <>
@@ -142,12 +141,13 @@ const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent
                           </div>
                   <Image src={p3} alt='' fill />
                 </div>
-                <div  className='btn card_btn widget '>
-                 <Link reload={true} href={whatsappUrl} >Register Now For Just Rs 299.</Link>
+                <a href={whatsappUrl} target="_blank" rel="noreferrer noopener"> <div  className='btn card_btn widget '>
+              Register Now For Just Rs 299.
                   <span>
                     Actual Price <span className='strike'>Rs 24,789</span>
                   </span>
                 </div>
+                </a>
                 <div className='card_last widget'>
                   <span>
                     🔥 54 people Registered in the last 24 hours! Don&rsquo;t miss
@@ -241,7 +241,7 @@ const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent
                 <p className='gray'>(Worth Rs 14993)</p>
               </div>
             </div>
-            <div className='btn bonus_btn'>Register Now To Claim Your Bonus</div>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer noopener">  <div className='btn bonus_btn'>Register Now To Claim Your Bonus</div></a>
           </div>
         </div>
       </section>
@@ -367,13 +367,13 @@ const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent
                 <div className='b_img'>
                   <Image src={brain} alt='toi' fill />
                 </div>
-                <div className='btn b_btn'>Take the Assessment</div>
+                <a href={whatsappUrl} target="_blank" rel="noreferrer noopener"> <div className='btn b_btn'>Take the Assessment</div></a>
               </div>
               <div className='b_card'>
                 <div className='b_img' id='ebook'>
                   <Image src={c1} alt='toi' fill />
                 </div>
-                <div className='btn b_btn'>Download the Free E-Book</div>
+                <a href={whatsappUrl} target="_blank" rel="noreferrer noopener">  <div className='btn b_btn'>Download the Free E-Book</div></a>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
-"use client"
-import React, { useState, useEffect } from 'react';
+"use client";
+import React, { useState, useEffect } from "react";
 
 const Timer = ({ initialCountdownTime, onTimerEnd }) => {
   const [countdownTime, setCountdownTime] = useState(initialCountdownTime);
@@ -7,12 +7,17 @@ const Timer = ({ initialCountdownTime, onTimerEnd }) => {
   const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
-    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(
+      2,
+      "0"
+    )}`;
   };
 
   useEffect(() => {
     const countdownInterval = setInterval(() => {
-      setCountdownTime((prevTime) => (prevTime > 0 ? prevTime - 1 : initialCountdownTime));
+      setCountdownTime((prevTime) =>
+        prevTime > 0 ? prevTime - 1 : initialCountdownTime
+      );
     }, 1000);
 
     return () => {

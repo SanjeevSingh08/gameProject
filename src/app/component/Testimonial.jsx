@@ -11,7 +11,10 @@ import { oo } from "../Provider/ContextProvider";
 import Overlay from "../overlay/Overlay";
 import Timer from "../component/Timer"
 const Testimonial =  () => {
-
+  const ownerPhoneNumber = '+918100049519'; // Replace with the owner's phone number
+  const prefilledMessage = 'Hi! I am interested.';
+  
+  const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(prefilledMessage)}`;
   const { overlay, setOverlay } = useContext(oo);
    
   const testimonials = [
@@ -147,12 +150,13 @@ const Testimonial =  () => {
             <div className="footer_sub">
               <h4>DONT HOLD BACK</h4>
               <h2>Be a Jedi At Your Work</h2>
-              <div className="btn card_btn widget ">
+              <a href={whatsappUrl} target="_blank" rel="noreferrer noopener">    <div className="btn card_btn widget ">
                 Register Now For Just Rs 299.
                 <span>
                   Actual Price <span className="strike">Rs 24,789</span>
                 </span>
               </div>
+              </a>
               <div className="footer_last">
               <Timer initialCountdownTime={10 * 60}/>
                 <span>
