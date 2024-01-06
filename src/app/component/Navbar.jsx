@@ -4,7 +4,7 @@ import logo from '../../../public/tc_new.png';
 import Image from 'next/image';
 import p3 from '../../../public/p3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faCalendar,faPlay } from '@fortawesome/free-solid-svg-icons';
 import logo1 from '../../../public/logo1.svg';
 import feature from '../../../public/feature.png';
 import p2 from '../../../public/p2.png';
@@ -14,6 +14,7 @@ import a1 from '../../../public/a1.png';
 import a2 from '../../../public/a2.png';
 import a3 from '../../../public/a3.png';
 import siddhi from '../../../public/siddhi.jpeg';
+import Link from 'next/link';
 import Timer from './Timer';
 
 import voda from '../../../public/voda.png';
@@ -31,6 +32,13 @@ import tata from '../../../public/tata.png';
 import brain from '../../../public/brain.png';
 
 const Navbar = () => {
+
+  const ownerPhoneNumber = '+919331581446'; // Replace with the owner's phone number
+const prefilledMessage = 'Hi! I am interested in joining';
+
+const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(prefilledMessage)}`;
+
+  
   
   return (
     <>
@@ -127,10 +135,15 @@ const Navbar = () => {
               </div>
               <div className='hc2_sub'>
                 <div className='hero_img widget'>
+                <div className="play_wrapper">
+                            <div className="play_btn">
+                              <FontAwesomeIcon icon={faPlay} />
+                            </div>
+                          </div>
                   <Image src={p3} alt='' fill />
                 </div>
-                <div className='btn card_btn widget '>
-                  Register Now For Just Rs 299.
+                <div  className='btn card_btn widget '>
+                 <Link href={whatsappUrl} >Register Now For Just Rs 299.</Link>
                   <span>
                     Actual Price <span className='strike'>Rs 24,789</span>
                   </span>
@@ -228,7 +241,7 @@ const Navbar = () => {
                 <p className='gray'>(Worth Rs 14993)</p>
               </div>
             </div>
-            <div className='btn bonus_btn'>Claim Your Bonus</div>
+            <div className='btn bonus_btn'>Register Now To Claim Your Bonus</div>
           </div>
         </div>
       </section>
