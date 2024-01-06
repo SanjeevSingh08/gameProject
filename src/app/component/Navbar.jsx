@@ -143,7 +143,7 @@ const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent
                   <Image src={p3} alt='' fill />
                 </div>
                 <div  className='btn card_btn widget '>
-                 <Link reload={true} href={whatsappUrl} >Register Now For Just Rs 299.</Link>
+                 <Link href={whatsappUrl} rel="noreferrer noopener">Register Now For Just Rs 299.</Link>
                   <span>
                     Actual Price <span className='strike'>Rs 24,789</span>
                   </span>
