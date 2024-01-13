@@ -34,7 +34,7 @@ import tata from "../../../public/tata.png";
 import brain from "../../../public/brain.jpg";
 
 const Navbar = () => {
-  const ownerPhoneNumber = "+918100049519"; // Replace with the owner's phone number
+  const ownerPhoneNumber = "+917506659099"; // Replace with the owner's phone number
   const prefilledMessage = "Hi! I am interested.";
 
   const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(
