@@ -116,7 +116,8 @@ padding: 0 4vw;
   position: relative;
   height: 280px;
   img {
-    object-fit: cover;
+    object-fit: fill;
+    border-radius: 1rem;
   }
 }
 
@@ -225,7 +226,8 @@ padding: 0 4vw;
 }
 #cm {
   img {
-    object-position: top;
+    object-fit: fill;
+    object-position: center;
   }
 }
 
@@ -564,6 +566,10 @@ height: max-content;
     font-size: 1.3rem;
     font-weight:bold;
     margin-bottom: 1rem;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    
   }
   span{
     font-size: 1.3rem;

@@ -31,7 +31,9 @@ const Timer = ({ initialCountdownTime, onTimerEnd }) => {
 
   return (
     <>
-      <p>Offer ends in: {formatTime(countdownTime)}</p>
+   <p className="text-white font-semibold text-lg p-4 rounded-md shadow-md bg-gradient-to-r from-pink-500 to-purple-800">
+        Offer ends in: {formatTime(countdownTime)}
+      </p>
     </>
   );
 };
