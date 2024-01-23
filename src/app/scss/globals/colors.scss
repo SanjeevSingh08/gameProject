@@ -1,10 +1,9 @@
 :root {
+  --bg1: #121212;
+  --bg2: #0a0a0a;
+  --bg3: rgba(255, 255, 255, 0.1);
 
-  --bluebg:  radial-gradient(circle, rgba(26,26,73,1) 0%, rgba(26,19,60,1) 45%);
-  --pinkbg: linear-gradient(90deg, rgba(254,0,174,1) 40%, rgba(142,57,197,1) 99%);
-  --whitebg: #ffffff;
-  --graybg:#FFFFFFB2;
-  --dgraybg:#FFFFFF1A;
-  --dbluebg: #060118;
-  
+  --white: #ffffff;
+  --btncolor: #714ffe;
+  --btncolor2: #441eb9;
 }

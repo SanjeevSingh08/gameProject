@@ -1,8 +1,6 @@
-import { Inter } from "next/font/google";
-import "./scss/style.scss";
-import { ContextOverlay } from "./Provider/ContextProvider";
-
-const inter = Inter({ subsets: ["latin"] });
+import "../app/scss/style.scss";
+import Footer from "./componentsfile/Footer";
+import Navbar from "./componentsfile/Navbar";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,13 +18,16 @@ export default function RootLayout({ children }) {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;300;400&family=Open+Sans:wght@100;300;400&family=Poppins:wght@100;300;400&display=swap"
           rel="stylesheet"
         />
       </head>
-<ContextOverlay>
-      <body className={inter.className}>{children}</body>
-      </ContextOverlay>
+
+      <body>
+        <Navbar />
+        <div className="top_div">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }

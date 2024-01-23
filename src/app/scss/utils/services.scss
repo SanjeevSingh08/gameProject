@@ -1,0 +1,36 @@
+@use "../globals" as *;
+
+.badge {
+  border-radius: var(--fs20);
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.content_badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Text {
+  max-width: 600px;
+  margin: 1rem auto;
+  .title {
+    margin: 1.2rem 0;
+    font-size: var(--fs23);
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+.row_services {
+  margin-top: 3.5rem;
+}
+.row_division {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    display: flex;
+    flex: 1 1 33.33%;
+    align-self: normal;
+  }
+}
