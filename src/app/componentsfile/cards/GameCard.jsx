@@ -13,7 +13,7 @@ const GameCard = ({name,date,image,id,gameName}) => {
     <div className="game_card_sub">
       <div className="gc_sub">
         <div className="thumbnail">
-<Link className='game_img' href={`/games/${id}-${modifiedName}`} ><Image src={`/games/${gameName}.png`} alt='game_image ' fill/>  </Link>
+<Link className='game_img' href={`/games/${id}-${modifiedName}`} ><Image src={`/games/${gameName}.png`} alt='game_image ' fill sizes="25vw"/>  </Link>
 <div className="time">
   <span><FontAwesomeIcon icon={faCalendarDays} /></span>
   <span>{date}</span>
@@ -23,13 +23,14 @@ const GameCard = ({name,date,image,id,gameName}) => {
           <div className="blog_title">
 <h4>{name}</h4>
           </div>
-          <div className="blogbtn btn">
-License Game <FontAwesomeIcon icon={faAngleRight} />
+          <Link href={`/games/${id}-${modifiedName}`}>       <div className="blogbtn btn">
+License Game <FontAwesomeIcon icon={faAngleRight} /></div></Link>
           </div>
         </div>
       </div>
     </div>
-  </div>
+ 
+
   )
 }
 

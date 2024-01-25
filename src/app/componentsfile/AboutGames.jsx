@@ -12,7 +12,7 @@ const AboutGames = () => {
           <div className="about_partition">
             <div className="image_about">
               <div className="image_about_sub ff">
-                <Image src={aboutimage} fill alt="about" />
+                <Image src={aboutimage} fill sizes="25vw" alt="about" />
               </div>
             </div>
             <div className="about_content">
@@ -22,9 +22,9 @@ const AboutGames = () => {
                 Forestry Games is a leading game creator, publisher, and
                 distributor of interactive entertainment and services, with a
                 rich portfolio of world-renowned brands. The teams throughout
-                Forestry Games worldwide network of studios and business
-                offices are committed to delivering original and memorable
-                gaming experiences across all popular web platforms.
+                Forestry Games worldwide network of studios and business offices
+                are committed to delivering original and memorable gaming
+                experiences across all popular web platforms.
               </h5>
               <div className="progress">
                 <div className="progress_title">

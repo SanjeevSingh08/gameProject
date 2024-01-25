@@ -76,16 +76,16 @@ const Testimonials = () => {
         <div className="sub">
           <div className="advertize">
             <div className="paypal img_sub">
-              <Image src={paypal} alt="paypal" fill />
+              <Image src={paypal} alt="paypal" fill sizes="25vw" />
             </div>
             <div className="spotify img_sub">
-              <Image src={spotify} alt="spotify" fill />
+              <Image src={spotify} alt="spotify" fill sizes="25vw" />
             </div>
             <div className="airbnb img_sub">
-              <Image src={airbnb} alt="airbnb" fill />
+              <Image src={airbnb} alt="airbnb" fill sizes="25vw" />
             </div>
             <div className="amazon img_sub">
-              <Image src={amazon} alt="amazon" fill />
+              <Image src={amazon} alt="amazon" fill sizes="25vw" />
             </div>
           </div>
         </div>

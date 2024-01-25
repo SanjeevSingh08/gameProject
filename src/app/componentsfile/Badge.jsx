@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Badge = ({title}) => {
+const Badge = ({ title }) => {
   return (
-<>
-<badge className="btn badge">{title}</badge>
-</>
-  )
-}
+    <>
+      <badge className="btn badge">{title}</badge>
+    </>
+  );
+};
 
-export default Badge
+export default Badge;

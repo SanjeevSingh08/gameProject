@@ -6,6 +6,7 @@
   position: relative;
   max-height: 540px;
   height: 440px;
+  min-height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +33,7 @@
   opacity: 0.2; /* Adjust the opacity as needed */
   background-position: center;
   background-size: cover;
+  z-index: 2;
 }
 .background_image2 {
   position: absolute;

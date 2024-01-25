@@ -12,7 +12,7 @@ const Iframe = ({name}) => {
         {isLoading && (
           <div className="loading-spinner">
           
-            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
           </div>
         )}
         <div className="gamepreview_wrapper">
@@ -30,3 +30,4 @@ const Iframe = ({name}) => {
 }
 
 export default Iframe
+
