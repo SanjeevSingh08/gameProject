@@ -1,14 +1,17 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { games } from "@/app/data";
 import Image from "next/image";
-
 import GamePosts from "@/app/componentsfile/GamePosts";
 import HtmlContent from "@/app/componentsfile/HtmlContent";
 import Link from "next/link";
-const page = ({ params }) => {
-  const gameId = params.gameId.split("-")[0];
+import Iframe from "@/app/componentsfile/Iframe";
 
+const GamePage = ({ params }) => {
+  const gameId = params.gameId.split("-")[0];
   const selectedGame = games.find((game) => game.id === gameId);
+
+ 
 
   return (
     <section className="screen_section ">
@@ -30,15 +33,7 @@ const page = ({ params }) => {
         </div>
       </div>
       <div className="game_preview_page sub ">
-        <div className="gamepreview_wrapper">
-          <iframe
-            className="gamepreview"
-            title="Game"
-            width="100%"
-            src={`https://gameshosted.vercel.app/${selectedGame.gameName}`}
-            allowFullScreen
-          ></iframe>
-        </div>
+      <Iframe name={selectedGame.gameName}/>
         <div className="game_buttons">
           <Link
             href={`https://gameshosted.vercel.app/${selectedGame.gameName}`}
@@ -60,9 +55,9 @@ const page = ({ params }) => {
           />
         </div>
       </div>
-      <GamePosts title="Recommended Games" />
+      <GamePosts title="Recommended Games" data={games} />
     </section>
   );
 };
 
-export default page;
+export default GamePage;

@@ -1,8 +1,8 @@
 import React from "react";
 
 import GameCard from "./cards/GameCard";
-import { games } from "../data";
-const GamePosts = ({title}) => {
+
+const GamePosts = ({title,data}) => {
  
 
   return (
@@ -11,7 +11,7 @@ const GamePosts = ({title}) => {
         <div className="sub">
           <h3 className="latest_posts">{title}</h3>
           <div className="game_posts">
-            {games.map((item) => {
+            {data.map((item) => {
               return (
                 <div key={item.name} className="game_wrapper">
                   <GameCard

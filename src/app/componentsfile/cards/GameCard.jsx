@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight,faCalendarDays } from '@fortawesome/free-solid-svg-icons'
 
 const GameCard = ({name,date,image,id,gameName}) => {
-  const modifiedName= name.replace(/ /g, "_");
+  const modifiedName= gameName.replace(/ /g, "_");
 
   return (
   <div className="game_card">
