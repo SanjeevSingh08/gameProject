@@ -1,5 +1,5 @@
-"use client"
-import React, { useState } from "react";
+
+import React from "react";
 import { games } from "@/app/data";
 import Image from "next/image";
 import GamePosts from "@/app/componentsfile/GamePosts";
@@ -7,6 +7,14 @@ import HtmlContent from "@/app/componentsfile/HtmlContent";
 import Link from "next/link";
 import Iframe from "@/app/componentsfile/Iframe";
 
+export const generateMetadata=({params})=>{
+  const gameId = params.gameId.split("-")[0];
+  const selectedGame = games.find((game) => game.id === gameId);
+return{
+  title:selectedGame.name,
+  description:selectedGame.gameName
+}
+}
 const GamePage = ({ params }) => {
   const gameId = params.gameId.split("-")[0];
   const selectedGame = games.find((game) => game.id === gameId);

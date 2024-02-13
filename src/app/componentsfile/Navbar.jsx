@@ -52,11 +52,11 @@ const pathis=path =="/games"
           <Image src={logo} alt="logo" width={74} height={48} />
         </Link>
         <ul className="nav_link">
-          <Link href="/about">
-            <li>Program</li>
+          <Link href="/contact">
+            <li>Contact Us</li>
           </Link>
-          <Link href="/about">
-            <li>Resources</li>
+          <Link href="/aboutUs">
+            <li>About Us</li>
           </Link>
           <Link href="/games">
             <li>Project</li>

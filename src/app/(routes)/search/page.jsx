@@ -2,7 +2,7 @@ import React from "react";
 import Fuse from "fuse.js";
 import { games } from "@/app/data";
 import GamePosts from "@/app/componentsfile/GamePosts";
-import GameCard from "@/app/componentsfile/cards/GameCard";
+import Search from "@/app/componentsfile/Search";
 
 const page = ({ searchParams }) => {
   const query = searchParams.query;
@@ -15,6 +15,7 @@ const page = ({ searchParams }) => {
   return (
     <div className="top-div">
     <section className="search_section">
+      <Search/>
       <GamePosts title={`Search results for "${query}"`} data={results} />
     </section>
     </div>
