@@ -15,6 +15,7 @@ const page = () => {
             <h1>About Us</h1>
             <br />
             <br />
+                      {/* eslint-disable react/no-unescaped-entities  */}
             <p>
               Forestry Games is a leading game creator, publisher, and
               distributor of interactive entertainment and services, with a rich
